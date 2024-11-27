@@ -1,0 +1,15 @@
+function saveToDatabase(userEmail, credit) {
+    const userRef = firebase.database().ref('users/' + userEmail);
+
+    userRef.set({
+        email: userEmail,
+        credit: credit
+    })
+    .then(() => {
+        console.log("Veri başarıyla kaydedildi!");
+        alert("Veri başarıyla kaydedildi!");
+    })
+    .catch((error) => {
+        console.error("Veri kaydedilirken hata oluştu: ", error);
+    });
+}
