@@ -1,0 +1,80 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+/* Header kısmı */
+header {
+    background-color: #00695c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .menu {
+    position: relative;
+}
+
+header .menu-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #00796b;
+    padding: 10px;
+}
+
+header .menu-content a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+header .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Main content */
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+main .sidebar {
+    width: 20%;
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* İçerik alanı */
+main .content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
